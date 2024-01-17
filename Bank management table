@@ -1,0 +1,29 @@
+-- Create Customers table
+CREATE TABLE Customers (
+    CustomerID INT PRIMARY KEY AUTO_INCREMENT,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Email VARCHAR(100),
+    Phone VARCHAR(20),
+    DateOfBirth DATE
+);
+
+-- Create Addresses table
+CREATE TABLE Addresses (
+    AddressID INT PRIMARY KEY AUTO_INCREMENT,
+    CustomerID INT,
+    Street VARCHAR(255),
+    City VARCHAR(100),
+    State VARCHAR(50),
+    ZipCode VARCHAR(20),
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+);
+
+-- Create Accounts table
+CREATE TABLE Accounts (
+    AccountID INT PRIMARY KEY AUTO_INCREMENT,
+    CustomerID INT,
+    Balance DECIMAL(10, 2),
+    AccountType VARCHAR(20),
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+);
