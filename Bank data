@@ -1,0 +1,26 @@
+INSERT INTO Customers (FirstName, LastName, Email, Phone, DateOfBirth)
+VALUES
+('John', 'Doe', 'john.doe@email.com', '123-456-7890', '1990-01-15'),
+('Jane', 'Smith', 'jane.smith@email.com', '987-654-3210', '1985-08-22'),
+('Alice', 'Johnson', 'alice.johnson@email.com', '555-123-4567', '1978-04-30'),
+('Bob', 'Williams', 'bob.williams@email.com', '333-999-8888', '1995-11-10'),
+('Eva', 'Brown', 'eva.brown@email.com', '777-444-2222', '1982-07-05');
+
+-- Insert sample data into Addresses table
+INSERT INTO Addresses (CustomerID, Street, City, State, ZipCode)
+VALUES
+(1, '123 Main St', 'Cityville', 'CA', '12345'),
+(2, '456 Oak St', 'Townsville', 'NY', '67890'),
+(3, '789 Pine St', 'Villagetown', 'TX', '54321'),
+(4, '101 Elm St', 'Hamletville', 'FL', '98765'),
+(5, '202 Maple St', 'Boroughburg', 'IL', '45678');
+
+-- Insert sample data into Accounts
+
+INSERT INTO Accounts (CustomerID, Balance, AccountType)
+VALUES
+(1, 5000.00, 'Savings'),
+(2, 7500.50, 'Checking'),
+(3, 12000.75, 'Savings'),
+(4, 2500.20, 'Checking'),
+(5, 8000.40, 'Savings');
