@@ -1,0 +1,72 @@
+public class Flight 
+{
+ 3 
+ 4 private int flightId;
+ 5 private String source;
+ 6 private String destination;
+ 7 private int noOfSeats;
+ 8 private double flightFare;
+ 9 public int getFlightId()
+{
+ 10 return flightId;
+ 11 
+}
+ 12 public void setFlightId
+(int flightId)
+{
+ 13 this.flightId = flightId;
+ 14 
+}
+ 15 public String getSource()
+{
+ 16 return source;
+ 17 
+}
+ 18 public void setSource(String source)
+{
+ 19 this.source = source;
+ 20 
+}
+ 21 public String getDestination()
+{
+ 22 return destination;
+ 23 
+}
+ 24 public void setDestination(String destination)
+{
+ 25 this.destination = destination;
+ 26 
+}
+ 27 public int getNoOfSeats()
+{
+ 28 return noOfSeats;
+ 29 
+}
+ 30 public void setNoOfSeats
+(int noOfSeats)
+{
+ 31 this.noOfSeats = noOfSeats;
+ 32 
+}
+ 33 public double getFlightFare()
+{
+ 34 return flightFare;
+ 35 
+}
+ 36 public void setFlightFare
+(double flightFare)
+{
+ 37 this.flightFare = flightFare;
+ 38 
+}
+ 39 public Flight
+(int flightId, String source, String destination,
+ 40 int noOfSeats, double flightFare)
+{
+super();
+ 42 this.flightId = flightId;
+ 43 this.source = source;
+ 44 this.destination = destination;
+ 45 this.noOfSeats = noOfSeats;
+ 46 this.flightFare = flightFare;
+ 47 }
